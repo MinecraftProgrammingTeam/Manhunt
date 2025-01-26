@@ -5,9 +5,12 @@ api-version: '1.13'
 
 commands:
   manhunt:
-    description: 追杀
+    description: Manhunt
 
 permissions:
     manhunt.any:
       description: Allows manhunt command
       default: true
+    manhunt.op:
+      description: Allows manhunt op command
+      default: op

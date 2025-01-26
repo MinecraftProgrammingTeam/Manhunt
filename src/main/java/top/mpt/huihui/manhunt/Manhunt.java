@@ -29,6 +29,9 @@ public final class Manhunt extends JavaPlugin {
     public Set<UUID> hunters;
     // 存放速通者地狱门/末地门坐标
     public Location door;
+    // 存放速通者死亡次数
+    public int RunnerDeath = 0;
+    public boolean GameStart = true;
 
 
 
@@ -39,8 +42,8 @@ public final class Manhunt extends JavaPlugin {
         hunters = new HashSet<>();
 
         // config
-//        getConfig().options().copyDefaults();
-//        saveDefaultConfig();
+        getConfig().options().copyDefaults();
+        saveDefaultConfig();
 
         // 初始化online_players
         Bukkit.getOnlinePlayers().forEach(it -> Online_Players.add(it.getName()));
