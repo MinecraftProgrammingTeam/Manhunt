@@ -2,3 +2,12 @@ name: Manhunt
 version: '${project.version}'
 main: top.mpt.huihui.manhunt.Manhunt
 api-version: '1.13'
+
+commands:
+  manhunt:
+    description: 追杀
+
+permissions:
+    manhunt.any:
+      description: Allows manhunt command
+      default: true
